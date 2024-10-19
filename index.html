@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculo de IMC</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <input type="text" name="nome" id="inputNome" placeholder="Digite seu nome">
+        <a href="resultado.html">
+            <button class="botao" id="inicioBotao">
+                Calcular IMC
+            </button>
+        </a>
+    </div>
+
+    <div class="notificacao">
+        <h3>O que é IMC?</h3>
+        <p>
+            O IMC (Índice de Massa Corporal) é uma medida usada para avaliar se uma pessoa está em um peso adequado em relação à sua altura.
+             Ele é calculado dividindo o peso da pessoa (em quilogramas) pela sua altura (em metros) elevada ao quadrado.
+        </p>
+    </div>
+
+    <!-- Tabela de imc, colocar na pagina de resposta.
+
+    O resultado dessa fórmula classifica o indivíduo em diferentes categorias de peso:
+
+    Abaixo do peso: IMC menor que 18,5
+    Peso normal: IMC entre 18,5 e 24,9
+    Sobrepeso: IMC entre 25 e 29,9
+    Obesidade grau 1: IMC entre 30 e 34,9
+    Obesidade grau 2: IMC entre 35 e 39,9
+    Obesidade grau 3 (obesidade mórbida): IMC maior ou igual a 40 -->
+    
+    <script src="script.js"></script>
+    <script>
+       let inicio = prompt("Deseja calcular seu IMC?")
+
+       if(inicio == "sim"){
+        let nome = prompt("Digite seu nome:")
+        let altura = prompt("Digite sua altura:")
+        let peso = prompt("Digite seu peso:")
+
+        let calc = peso / (altura * altura)
+        alert(calc)
+
+       }
+    </script>
+</body>
+</html>
