@@ -25,7 +25,7 @@ O projeto "Calculadora de IMC" Tem como objetivo levar informação ao usuario s
 Para clonar o repositório, utilize o comando:
 
 ```bash
-git clone https://github.com/derickcsantos/ConsultorDeCEP.git
+git clone https://github.com/Derickcsantos/CalculadoraIMC.git
 ```
 
 ## Considerações finais 📝 
